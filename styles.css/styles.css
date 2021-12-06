@@ -646,9 +646,8 @@ label {
     color: var(--secondary-text-color);
     display: flex;
     align-items: center;
-    justify-content: center;
 }
-.check-label::before {
+/* .check-label::before {
     content: "";
     display: block;
     width: 16px; height: 15px;
@@ -656,16 +655,38 @@ label {
     border-radius: 2px;
     margin-right: 7px;
     
-}
-.check-input:checked +.check-label::before {
+} */
+/* .check-input:checked +.check-label::before {
     background-image: url(../images/icon-check.svg);
     background-size: 16px 15px;
     background-position: center;
     border: none;
+} */
+.check-label span {
+    width: 16px;
+    height: 15px;
+    border: 2px solid #000000;
+    border-radius: 2px;
+    margin-right: 7px;
+    fill: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.check-input:checked + .check-label span{
+    background-color: var(--accent-color);
+    border: none;
+    fill: var(--accent-color-white);
+}
+.check-icon {
+    width: 11px;
+    height: 8px;
+
 }
 .checkbox-link {
     color: var(--accent-color);
     text-decoration: underline;
+    margin-left: 2px;
 }
 .modal-btn {
     padding: 10px 55px;
