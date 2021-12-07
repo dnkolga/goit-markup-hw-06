@@ -203,11 +203,10 @@ body {
     padding-bottom: 57px;
 }
 .footer-box {
+    justify-content: space-between;
     align-items: baseline;
 }
-.footer-nav {
-    margin-right: 70px;
-}
+
 .footer-logo {
     display: block;
     margin-bottom: 20px;
@@ -252,9 +251,7 @@ body {
     height: 20px;
     fill: var(--accent-color-white);
 }
-.footer-social {
-    margin-right: 93px;
-}
+
 .footer-form input {
     padding-top: 15px;
     padding-bottom: 15px;
